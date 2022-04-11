@@ -1,8 +1,13 @@
-.name, .bio, .conteudo{
+*{
+    background-color: white;
     color: rgb(15, 20, 25);
 }
+li{
+    list-style: none;
+    padding: 1em;
+}
 
-.user, .dados a, .data, .profile, .menu-perfil a{
+.user, .dados a, .data, .profile{
     color: rgb(83, 100, 113);
     text-decoration: none;
 }
@@ -15,22 +20,21 @@
     background-color: rgba(249, 24, 128, 0.1);
 }
 
-li{
-    list-style: none;
-    padding: 10px;
-}
-
-.navegacao a:link{
+.navegacao a:link, .publicacoes a:link{
     text-decoration: none;
-    color: rgb(15, 20, 25);
-    margin: 10px;
-    
+    color: rgb(15, 20, 25); 
 }
 
-.navegacao li:hover{
+.navegacao a{
+    padding-left: 1em;
+    padding-right: 25em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navegacao a:hover, .publicacoes a:hover{
     background-color: rgba(15, 25, 20, 0.1);
-    border-radius: 3em;
-    
+    border-radius: 3em; 
 }
 
 .estatisticas a:link{
@@ -42,7 +46,6 @@ li{
 }
 
 .estatisticas span{
-    color: rgb(15, 20, 25);
     font-weight: bold;
 }
 
