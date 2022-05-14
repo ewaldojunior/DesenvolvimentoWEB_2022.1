@@ -1,92 +1,126 @@
-*{
-    /* background-color: white; */
+* {
     color: rgb(15, 20, 25);
-    border: 1px solid red;
-}
-li{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    padding: 0 !important;
+  }
+  
+  li {
     list-style: none;
-    /* padding: 1em; */
-}
-
-.user, .dados a, .data, .profile{
+  }
+  
+  .user,
+  .dados a,
+  .data,
+  .profile {
     color: rgb(83, 100, 113);
     text-decoration: none;
-}
-
-.dados li, .estatisticas li{
+  }
+  
+  .dados li,
+  .estatisticas li {
     display: inline;
-}
-
-.conteudo:hover{
-    background-color: rgba(249, 24, 128, 0.1);
-}
-
-.navegacao a:link, .publicacoes a:link{
+  }
+  
+  .navegacao a:link,
+  .publicacoes a:link {
     text-decoration: none;
-    color: rgb(15, 20, 25); 
-}
-
- .navegacao li{
+    color: rgb(15, 20, 25);
+  }
+  
+  .navegacao li {
     padding: 10px 0px;
-} 
-
-
-
-.navegacao li:hover:not(:last-child), .publicacoes a:hover{
+    cursor: pointer;
+  }
+  
+  .navegacao li:hover:not(:last-child),
+  .publicacoes a:hover {
     background-color: rgba(15, 25, 20, 0.1);
-    border-radius: 3em; 
-}
-
-.estatisticas a:link{
+    border-radius: 3em;
+  }
+  
+  .estatisticas a:link {
     text-decoration: none;
-}
-
-.estatisticas a:hover{
+  }
+  
+  .estatisticas a:hover {
     text-decoration: underline;
-}
-
-.estatisticas span{
+  }
+  
+  .estatisticas span {
     font-weight: bold;
-}
-
-.estatisticas a{
+  }
+  
+  .estatisticas a {
     color: rgb(83, 100, 113);
-}
-
-.acoes a{
+  }
+  
+  .acoes a {
     color: rgb(83, 100, 113);
     border-radius: 1em;
-}
-
-.acoes a:link{
+  }
+  
+  .acoes a:link {
     color: rgb(83, 100, 113);
     text-decoration: none;
-}
-
-.acoes a:hover{
+  }
+  
+  .acoes a:hover {
     text-decoration: underline;
-}
-
-.acoes #reply:hover, #share:hover {
+  }
+  
+  #reply:hover,
+  #share:hover {
     background-color: rgba(29, 155, 240, 0.1);
     color: rgba(29, 155, 240, 1);
-}
-
-.acoes #retzeet:hover{
+  }
+  
+  #retzeet:hover {
     background-color: rgba(0, 186, 124, 0.1);
-    color:rgba(0, 186, 124, 1);
-}
-
-.acoes #like:hover{
+    color: rgba(0, 186, 124, 1);
+  }
+  
+  #like:hover {
     background-color: rgba(249, 24, 128, 0.1);
     color: rgba(249, 24, 128, 1);
-}
-
-.bg-branco{
+  }
+  
+  .bg-branco {
     color: white;
-}
-
-.reset_ul{
-    margin: 0;
-    padding: 0;
-}
+  }
+  
+  .profile-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .rounded-pill {
+    border-radius: 100px;
+  }
+  
+  .publicacoes {
+    display: flex;
+  }
+  
+  .buscar-usuario {
+    background-color: rgba(155, 155, 155, 0.1);
+  }
+  
+  .buscar-usuario input {
+    outline: none;
+  }
+  
+  .sugestoes {
+    background-color: rgba(155, 155, 155, 0.1);
+  }
+  
+  .lista-de-sugestoes img {
+    width: 48px;
+    height: 48px;
+  }
+  
