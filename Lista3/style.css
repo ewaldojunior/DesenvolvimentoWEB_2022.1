@@ -58,23 +58,24 @@
   .estatisticas a {
     color: rgb(83, 100, 113);
   }
-  
-  .acoes a {
-    color: rgb(83, 100, 113);
-    border-radius: 1em;
+
+  #acoes i{
+      border-radius: 10px;
+  }
+
+  #acoes a{
+      color: rgb(83, 100, 113);
+      border-radius: 10px;
+      padding: 5px;
   }
   
-  .acoes a:link {
-    color: rgb(83, 100, 113);
+  #acoes a:link {
     text-decoration: none;
+    color: rgb(83, 100, 113);
   }
-  
-  .acoes a:hover {
-    text-decoration: underline;
-  }
-  
+
   #reply:hover i{
-    background: rgba(29, 155, 240, 0.1);
+    background-color: rgba(29, 155, 240, 0.1);
   }
 
   #reply:hover a{
@@ -82,7 +83,7 @@
   }
 
   #retzeet:hover i {
-    background: rgba(0, 186, 124, 0.1);
+    background-color: rgba(0, 186, 124, 0.1);
   }
 
   #retzeet:hover a {
@@ -90,13 +91,12 @@
   } 
 
   #like:hover i{
-    background: rgba(249, 24, 128, 0.1);
+    background-color: rgba(249, 24, 128, 0.1);
   }
 
   #like:hover a {
     color: rgba(249, 24, 128, 1);
   }
-
 
   #share:hover i {
     background-color: rgba(29, 155, 240, 0.1);
@@ -106,8 +106,7 @@
   #share:hover a{
     color: rgba(29, 155, 240, 1);
   }
-  
-  
+
   .bg-branco {
     color: white;
   }
