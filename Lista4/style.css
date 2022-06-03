@@ -1,0 +1,185 @@
+* {
+    color: rgb(15, 20, 25);
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    padding: 0 !important;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .user,
+  .dados a,
+  .data,
+  .profile {
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+  }
+  
+  .dados li,
+  .estatisticas li {
+    display: inline;
+  }
+  
+  .navegacao a:link,
+  .publicacoes a:link {
+    text-decoration: none;
+    color: rgb(15, 20, 25);
+  }
+  
+  .navegacao li {
+    padding: 10px 0px;
+    cursor: pointer;
+  }
+  
+  .navegacao li:hover:not(:last-child),
+  .publicacoes a:hover {
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 3em;
+  }
+  
+  .estatisticas a:link {
+    text-decoration: none;
+  }
+  
+  .estatisticas a:hover {
+    text-decoration: underline;
+  }
+  
+  .estatisticas span {
+    font-weight: bold;
+  }
+  
+  .estatisticas a {
+    color: rgb(83, 100, 113);
+  }
+
+  #acoes i{
+      border-radius: 10px;
+  }
+
+  #acoes a{
+      color: rgb(83, 100, 113);
+      border-radius: 10px;
+      padding: 5px;
+  }
+  
+  #acoes a:link {
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+  }
+
+  #reply:hover i{
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+  }
+
+  #reply:hover a{
+    color: rgba(29, 155, 240, 1);
+  }
+
+  #retzeet:hover i {
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+  }
+
+  #retzeet:hover a {
+    color: rgba(0, 186, 124, 1);
+  } 
+
+  #like:hover i{
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+  }
+
+  #like:hover a {
+    color: rgba(249, 24, 128, 1);
+  }
+
+  #share:hover i {
+    background-color: rgba(29, 155, 240, 0.1);
+    color: rgba(29, 155, 240, 1);
+  }
+
+  #share:hover a{
+    color: rgba(29, 155, 240, 1);
+  }
+
+  .bg-branco {
+    color: white;
+  }
+  
+  .profile-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .rounded-pill {
+    border-radius: 100px;
+  }
+  
+  .publicacoes {
+    display: flex;
+  }
+  
+  .buscar-usuario {
+    background-color: rgba(155, 155, 155, 0.1);
+  }
+  
+  .buscar-usuario input {
+    outline: none;
+  }
+  
+  .sugestoes {
+    background-color: rgba(155, 155, 155, 0.1);
+  }
+  
+  .lista-de-sugestoes img {
+    width: 48px;
+    height: 48px;
+  }
+  
+
+
+  /* form */
+
+  #replyForm{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+  }
+
+  #campoTexto, #campoTexto-modal{
+    overflow: hidden;
+    resize: none;
+  }
+
+  #enviar, #enviar-modal{
+    border-radius: 100px;
+  }
+
+  #enviar:hover, #enviar-modal:hover{
+    background-color: rgb(29, 155, 240);
+  }
+
+  #status i:hover{
+    background-color: rgb(29, 155, 240);
+    border-radius: 100px;
+  }
+
+  #multimidia i:hover{
+    background-color: rgb(29, 155, 240);
+    border-radius: 100px;
+    
+  }
+
+  #imagem-form img{
+    width: 64px;
+    height: 64px;
+  }
+  
