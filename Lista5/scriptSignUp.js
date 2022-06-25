@@ -13,19 +13,19 @@ function compararSenhas(){
         campoConfirmarSenha.reportValidity()
         return false
     }else{
-        campoConfirmarSenha.setCustomValidity("");
+        campoConfirmarSenha.setCustomValidity("")
         return true
     }
 }
 
 /* Checkbox */
 function btnClickSignUp() {
-    const checkBoxValidation = document.getElementById("btnSim");
+    const checkBoxValidation = document.getElementById("btnSim")
     document.addEventListener("change", ()=> {
         if (checkBoxValidation.checked) {
-            botao.disabled = false;
+            botao.disabled = false
         } else {
-            botao.disabled = true;
+            botao.disabled = true
         }
     })
 }
