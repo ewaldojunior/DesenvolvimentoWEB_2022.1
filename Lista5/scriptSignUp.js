@@ -46,7 +46,7 @@ selectMes.value = ''
 
 function configDia(mes) {
     var qtdDias
-    
+
     if (mes === 'Fevereiro') {
         qtdDias = 29
     }else if(mes === 'Abril' || mes === 'Junho' || mes === 'Setembro' || mes === 'Novembro') {
@@ -65,6 +65,7 @@ function configDia(mes) {
         selectDia.appendChild(optionHTML)
     } 
 }
+
 
 function configAno() {
     if(selectDia.value == 29 && selectMes.value === 'Fevereiro'){
@@ -93,6 +94,7 @@ btnClickSignUp()
 // -----
 configDia(selectMes.value)
 selectAno.value = ''
+selectDia.value = ''
 
 selectMes.onchange = function() {
     configDia(selectMes.value)
