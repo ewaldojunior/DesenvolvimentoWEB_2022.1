@@ -46,12 +46,13 @@ selectMes.value = ''
 
 function configDia(mes) {
     var qtdDias
-    if(mes === 'Abril' || mes === 'Junho' || mes === 'Setembro' || mes === 'Novembro') {
-        qtdDias = 30
-    }else if(mes === 'Janeiro' || mes === 'Março' || mes === 'Maio' || mes === 'Julho' || mes === 'Agosto' || mes === 'Outubro' || mes === 'Dezembro') {
-        qtdDias = 31
-    }else if (mes === 'Fevereiro') {
+    
+    if (mes === 'Fevereiro') {
         qtdDias = 29
+    }else if(mes === 'Abril' || mes === 'Junho' || mes === 'Setembro' || mes === 'Novembro') {
+        qtdDias = 30
+    }else{
+        qtdDias = 31
     }
 
     while(selectDia.firstChild) {
