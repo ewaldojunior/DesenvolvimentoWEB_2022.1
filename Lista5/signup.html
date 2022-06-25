@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61505dac13.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="modal fade" id="signupUser" tabindex="-1" role="dialog" aria-labelledby="tituto" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5>Criar uma conta</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-hidden="true"></button>
+
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" id="form" novalidate> 
+                        <div class="d-flex flex-column">
+                            <div class="mb-3 form-floating">
+                                <input type="name" class="form-control" id="campoNome" placeholder="Nome" required> 
+                                <label for="campoNome">Nome:</label>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um nome de usuário.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="email" class="form-control" id="campoEmail" placeholder="teste@teste.com" required> 
+                                <label for="campoEmail">Email:</label>
+                                <div class="invalid-feedback">
+                                    Informe um email válido.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="password" minlength="6" class="form-control" id="campoSenha" placeholder="Senha" required>
+                                <label for="campoSenha">Senha:</label>
+                                <div class="invalid-feedback">
+                                    A senha é obrigatória e deve ter pelo menos 6 caracteres.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-floating">
+                                <input type="password" minlength="6" class="form-control" id="campoConfirmarSenha" placeholder="Confirmar Senha" required>
+                                <label for="campoConfirmarSenha">Confirmação da Senha:</label>
+                                <div class="invalid-feedback">
+                                    Confirme sua senha e deve ter pelo menos 6 caracteres.
+                                </div>
+                            </div>
+                            
+                                <p><strong>Data de nascimento</strong></p>
+                                <p style="font-size: 14px;">Isso não será exibido publicamente. Conforme sua própria idade, 
+                                mesmo se esta conta for de empresa, de um 
+                                animal de estimação ou outros.</p>
+
+                                <div class="d-flex flex-row justify-content-between">
+                                    
+                                    <div class="form-floating" style="width: 200px;">
+                                        <select class="form-select" id="campoMes" required></select>
+                                        <label>Mês</label>
+                                        <div class="invalid-feedback"> Campo obrigatório.</div>
+                                    </div>
+                                    
+                                    <div class="form-floating" style="width: 150px;">
+                                        <select class="form-select" id="campoDia" required></select>
+                                        <label>Dia</label>
+                                        <div class="invalid-feedback">Campo obrigatório.</div>
+                                    </div>
+                                    
+                                    <div class="form-floating" style="width: 100px;">
+                                        <select class="form-select" id="campoAno" required></select>
+                                        <label>Ano</label>
+                                        <div class="invalid-feedback">Campo obrigatório.</div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-check mt-3 mb-3">
+                                    <input class="form-check-input" type="checkbox" id="checkEmails">
+                                    <label class="form-check-label" for="checkEmails">
+                                    Receba e-mails sobre sua atividade no Twitter e recomendações. 
+                                    </label>
+                                </div>
+
+                                <span>Você concorda com nossos Termos, com a Política de Privacidade e com o Uso de Cookies?</span>
+                                <div class="d-flex flex-row">
+                                    <div class="form-check m-1">
+                                        <input class="form-check-input" type="radio" name="btnRadio" id="btnSim" checked>
+                                        <label class="form-check-label" for="btnSim">
+                                        Sim
+                                        </label>
+                                    </div>
+                                    <div class="form-check m-1">
+                                        <input class="form-check-input" type="radio" name="btnRadio" id="btnNao">
+                                        <label class="form-check-label" for="btnNao">
+                                        Não
+                                        </label>
+                                    </div>
+                                </div>
+                                <hr>
+                            <button type="submit" class="btn btn-primary" id="btnEnviarCadastro">Se inscrever</button>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+
+    <script>
+        (() => {
+        'use strict'
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()
+    </script>
+
+    <script type="text/javascript">
+        $('#signupUser').modal('show');
+        $('#signupUser').modal('toggle');
+    
+    </script>
+
+    <script src="scriptSignUpDate.js"></script>
+    <!-- <script src="scriptTesteDate.js"></script> -->
+
+</body>
+</html>
